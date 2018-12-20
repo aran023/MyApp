@@ -1,3 +1,4 @@
+import { GmapPage } from './../pages/gmap/gmap';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform, Icon } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -6,6 +7,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { SocialInfoPage } from '../pages/social-info/social-info';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -24,7 +26,8 @@ export class MyApp {
     this.pages = [
       { title: 'เกียวกับฉัน', component:SocialInfoPage, icon:'arrow-dropright'},
       { title: 'Home', component: HomePage, icon:'arrow-dropright' },
-      { title: 'List', component: ListPage, icon:'arrow-dropright' }
+      { title: 'List', component: ListPage, icon:'arrow-dropright' },
+      { title: 'map', component: GmapPage, icon:'arrow-dropright' }
     ];
 
   }
