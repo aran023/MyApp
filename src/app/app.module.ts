@@ -1,3 +1,5 @@
+import { JsonMenuPage } from './../pages/json-menu/json-menu';
+import { BarcodeScannerPage } from './../pages/barcode-scanner/barcode-scanner';
 import { GmapPage } from './../pages/gmap/gmap';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -14,11 +16,12 @@ import{SMS} from '@ionic-native/sms';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner'; 
 import { Geolocation } from '@ionic-native/geolocation';
 
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage,SocialInfoPage,GmapPage
+    ListPage,SocialInfoPage,BarcodeScannerPage,GmapPage,JsonMenuPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,7 @@ import { Geolocation } from '@ionic-native/geolocation';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,SocialInfoPage,GmapPage
+    ListPage,SocialInfoPage,BarcodeScannerPage,GmapPage,JsonMenuPage
   ],
   providers: [
     StatusBar,
@@ -36,6 +39,7 @@ import { Geolocation } from '@ionic-native/geolocation';
     SMS,
     BarcodeScanner,
     Geolocation,
+
     {provide: ErrorHandler, useClass: IonicErrorHandler}
 
   ]
